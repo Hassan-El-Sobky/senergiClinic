@@ -1,0 +1,59 @@
+<!--Contactus Section Start-->
+<section class="contactUs">
+  <!--Thanks Message Start-->
+  <div *ngIf='messageFlag' class="thanks">
+    <div class="message">
+      <i class="fas fa-check-circle fa-5x"></i>
+      <p>Thank You</p>
+      <p>The form Submitted successfully</p>
+      <p>You will be redirect to home page</p>
+      <i (click)='close()' class="fas fa-window-close fa-2x "></i>
+    </div>
+
+  </div>
+  <!--=========Thanks Message End==========-->
+
+
+  <!--FORM Start-->
+  <div class="form p-5">
+    <h3 class="text-center">Contact us</h3>
+    <form [formGroup]='formData' (ngSubmit)='onSubmit()'>
+      <div class="form-group py-2">
+        <input [class.is-valid]='formData.get("email").valid' type="email" formControlName="email"
+          placeholder="Enter your email" class="form-control">
+        <div *ngIf='formData.controls.email.errors && formData.controls.email.touched' class="alert alert-danger">
+          Email required
+        </div>
+      </div>
+
+      <div class="form-group py-2">
+        <input [class.is-valid]='formData.get("name").valid' type="text" formControlName="name"
+          placeholder="Enter your name" class="form-control">
+        <div *ngIf='formData.controls.name.errors && formData.controls.name.touched' class="alert alert-danger">
+          Name required &
+          Must Begin with Captial letter
+        </div>
+      </div>
+
+      <div class="form-group py-2">
+        <textarea [class.is-valid]='formData.get("message").valid' placeholder="Message" formControlName="message"
+          class="form-control"></textarea>
+
+        <div *ngIf='formData.controls.message.errors && formData.controls.message.touched' class="alert alert-danger">
+          Enter your message
+        </div>
+      </div>
+
+      <div class="form-group py-3">
+        <button [disabled]="formData.invalid" class="btn btn-primary w-100">Send</button>
+      </div>
+
+    </form>
+
+
+  </div>
+<!--FORM End-->
+
+</section>
+
+<!--Contactus End-->

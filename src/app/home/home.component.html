@@ -1,0 +1,165 @@
+<!-- 1st Section Stract Senergic Clinic-->
+<section class="s-Clinic ">
+    <div class="container">
+      <div class="content">
+          <p class="before">Committed To Success</p>
+         <h2>
+           we care about Your <span class="health">Health</span>
+         </h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ut!</p>
+         <button  class="btn btn-primary  p-3"><a style="text-decoration: none; color: #fff;" routerLink='/contactus' >Contact Us <i class="fas fa-arrow-right "></i> </a></button>
+    </div>
+   </div>
+   </section>
+<!--1st Section end-->   
+
+<!--Section Our Services we Provided => Home-->
+<section class="home">
+    <div class="container py-5">
+<div class="services py-5 text-center">
+    <h3> All Services provided by the clinic</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatibus?</p>
+</div>
+    <owl-carousel-o [options]="customOptions" class="my-5">
+      <ng-template carouselSlide>
+          <div class="contentContiner">
+          <div class="contentImg">
+            <img class="img-fluid" [src]="[imgSrc]">
+            <div class="overlay d-flex justify-content-center align-items-center">
+                <i class="fas fa-user-md fa-4x"></i>
+            </div>
+        </div>
+        
+            <div class=" contentBody text-center">
+                <p>Health care</p>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda.</span>
+             </div>  
+          
+        </div>
+
+      </ng-template>  
+      <ng-template carouselSlide>
+        <div class="contentContiner">
+        <div class="contentImg">
+          <img class="img-fluid" [src]="[cardSrc]">
+          <div class="overlay d-flex justify-content-center align-items-center">
+              <i class="fas fa-user-md fa-4x"></i>
+          </div>
+      </div>
+      
+          <div class=" contentBody text-center">
+              <p>Cardic Clinic</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda.</span>
+           </div>  
+        
+      </div>
+
+    </ng-template>  >  
+     
+    <ng-template carouselSlide>
+        <div class="contentContiner">
+        <div class="contentImg">
+          <img class="img-fluid" [src]="[cosSrc]">
+          <div class="overlay d-flex justify-content-center align-items-center">
+              <i class="fas fa-user-md fa-4x"></i>
+          </div>
+      </div>
+      
+          <div class=" contentBody text-center">
+              <p>Cosmetics care</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda.</span>
+           </div>  
+        
+      </div>
+
+    </ng-template>   
+      
+      
+    <ng-template carouselSlide>
+        <div class="contentContiner">
+        <div class="contentImg">
+          <img class="img-fluid" [src]="[ dentalSrc]">
+          <div class="overlay d-flex justify-content-center align-items-center">
+              <i class="fas fa-user-md fa-4x"></i>
+          </div>
+      </div>
+      
+          <div class=" contentBody text-center">
+              <p>Dental clinic</p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda.</span>
+           </div>  
+        
+      </div>
+
+    </ng-template>  
+
+    </owl-carousel-o>
+
+
+</div>
+</section>
+<!--Section Services End-->
+
+<!--Section our Latest News-->
+<section class="news py-5">
+  <div class="latest">
+  <h2 class="text-center">LATEST NEWS</h2>
+  <p class="text-center ">Read our latest news from the company or general medical news. Feel free to ask questions in comments for any news you find interesting.</p>
+</div>
+  <div class="container">
+  <div class="row">
+ <div class="col-md-4 py-5">
+   <div class="newContainer">
+     <div class="icon">
+   <img class="img-fluid" [src]="news1" alt="newsImage">
+   <i class="fas fa-plus"></i>
+  </div>
+   <div class="newsContent">
+    <i class="far fa-clock"></i>
+    <span>August 8, 2015</span>
+    <h2>Your Medical Records are Safe</h2>
+    <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Quis nostrud exerci tation ulla. Ut wisi enim ad minim veniam. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+   </div>
+ </div>
+</div>
+
+<div class="col-md-4 py-5">
+  <div class="newContainer">
+    <div class="icon">
+  <img class="img-fluid" [src]="news2" alt="newsImage">
+  <i class="fas fa-plus"></i>
+ </div>
+  <div class="newsContent">
+   <i class="far fa-clock"></i>
+   <span>August 8, 2015</span>
+   <h2>Are drugs the best solution?</h2>
+   <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Quis nostrud exerci tation ulla. Ut wisi enim ad minim veniam. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 py-5">
+  <div class="newContainer">
+    <div class="icon">
+  <img class="img-fluid" [src]="news3" alt="newsImage">
+  <i class="fas fa-plus"></i>
+ </div>
+  <div class="newsContent">
+   <i class="far fa-clock"></i>
+   <span>August 8, 2015</span>
+   <h2>2015 Best USA Hospitals and Clinics</h2>
+   <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Quis nostrud exerci tation ulla. Ut wisi enim ad minim veniam. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+ </div>
+
+</section>
+<!--Section end-->

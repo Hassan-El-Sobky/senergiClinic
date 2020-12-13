@@ -1,0 +1,71 @@
+<!--
+   In this section we can use both methods of scrolling
+
+   ==  "Angular Material" cdk virtuall scrolling and ngx-infinite-scrolling == 
+
+I use cdk virtual Scrolling ==> So the DOM change the content by index  
+The DOM only 6 <tr> even scrolling the index content is change
+ 
+-->
+
+<!--Section-->
+<section class="covidData py-5">
+
+   <div class="container">
+      <div class="w-50 m-auto text-center py-3">
+         <h2>Covid-19</h2>
+         <hr class="w-25" />
+      </div>
+
+
+      <!--CDK Section Start-->
+      <cdk-virtual-scroll-viewport itemSize='150' class="contetData">
+
+         <table class=" table  table-striped text-center">
+            <thead>
+               <th>Country</th>
+               <th>Date</th>
+               <th>NewConfirmed</th>
+               <th>NewDeaths</th>
+               <th>NewRecovered</th>
+               <th>TotalConfirmed</th>
+               <th>TotalDeaths</th>
+               <th>TotalRecovered</th>
+            <tbody>
+               <tr *cdkVirtualFor='let index of myData'>
+                  <td>
+                     <p> {{index.Country}}</p>
+                  </td>
+                  <td>
+                     <p>{{index.Date | date: 'dd/MM/yyyy'}}</p>
+                  </td>
+                  <td>
+                     <p>{{index.NewConfirmed}}</p>
+                  </td>
+                  <td class="bg-danger">
+                     <p>{{index.NewDeaths}}</p>
+                  </td>
+                  <td>
+                     <p>{{index.NewRecovered}}</p>
+                  </td>
+                  <td>
+                     <p>{{index.TotalConfirmed}}</p>
+                  </td>
+                  <td class="bg-danger">
+                     <p>{{index.TotalDeaths}}</p>
+                  </td>
+                  <td>
+                     <p>{{index.TotalRecovered}}</p>
+                  </td>
+               </tr>
+            </tbody>
+
+         </table>
+
+      </cdk-virtual-scroll-viewport>
+      <!--CDK Section End-->
+
+   </div>
+
+</section>
+<!--Section End-->

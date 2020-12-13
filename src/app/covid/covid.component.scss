@@ -1,0 +1,65 @@
+//Section Parent
+.covidData
+{
+    margin-top: 100px;
+}
+.covidData h2
+{
+    text-transform: uppercase;;
+    font-weight: 700;
+    font-style: italic;
+}
+/*Table Scoller Start*/
+.contetData
+{
+   
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 650px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    width: 100%;
+}
+thead
+{
+    border-bottom: 2px solid black;
+
+}
+th
+{
+    padding: 20px;
+    font-family: cursive;
+   
+
+}
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #24221f;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #F9F9FD;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+}
+hr
+{
+    margin: revert;
+    height: 5px;
+   }
+
+
+tr
+{
+  height: 100px;
+}
+td p
+{
+    margin-top: 30px;
+   
+}
+
+/*@Table Scoller End*/

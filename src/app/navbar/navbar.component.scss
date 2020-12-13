@@ -1,0 +1,44 @@
+$logoColor:#0F60ED;
+/*Expaneded the Nav*/
+.navbar
+{
+    padding: 20px;
+}
+/* Move the ul into right*/
+.me-auto
+{
+    margin-left: 65%;
+}
+.navbar .navbar-brand
+{
+    color:$logoColor ;
+}
+/*Nav Icon =>Senergic */
+.navbar .navbar-brand span
+{
+    color: #000;
+    font-weight:bolder;
+    font-size: 25px;
+    font-family: 'Tahoma';
+    margin: 15px;
+}
+/*Nav a style*/
+.navbar .navbar-nav li .nav-link
+{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'tahoma';
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+/*When the user hover on nav links */
+.navbar .navbar-nav li a:hover
+{
+    transition: border .5s;
+    border-bottom: 4px solid $logoColor;
+    margin-top: 10px;
+
+}

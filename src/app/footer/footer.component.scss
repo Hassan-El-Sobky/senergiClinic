@@ -1,0 +1,54 @@
+.sen-footer
+{
+
+    background-color: black;
+    color: #fff;
+}
+.footer-logo i
+{
+ color: #0F60ED;
+}
+.footer-logo span
+{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.about p
+{
+    font-weight:100 ;
+    font-size: 14px;
+    font-weight: bold;
+    width: 65%;
+    line-height: 20px;
+    padding: 20px;
+    color: #ADBDBD;
+}
+.phone p 
+{
+    font-size: 36px;
+}
+.phone .phoneColor
+{
+    color: blue;
+    margin-left: 15px;
+    font-size: 36px;
+}
+.phone span
+{
+    font-size: 16px;
+    color: #ADBDBD;
+    font-weight: bold;
+}
+.copy-right
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.copy-right .icons a
+{
+    margin-left: 20px;
+    color: #ffffff;
+}
